@@ -13,7 +13,11 @@ Kullandığımız teknolojiler
 
 
 *C#
+
 *SQL
+
 *Metroframework
+
 *LINQ
+
 *Entity Framework
