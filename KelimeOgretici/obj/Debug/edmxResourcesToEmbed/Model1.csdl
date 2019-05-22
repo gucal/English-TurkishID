@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="KelimeOgreticiModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="tbl_Gun1">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ingilizcekelime" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="turkcekelime" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="tbl_Gun180">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ingilizcekelime" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="turkcekelime" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="tbl_Gun30">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ingilizcekelime" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="turkcekelime" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="tbl_Gun7">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ingilizcekelime" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="turkcekelime" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="tbl_GunListesi">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="gun1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="gun7" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="gun30" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="gun180" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="tbl_KelimeListesi">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ingilizcekelime" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="turkcekelime" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="cumle" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="gramer" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="tarih" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityContainer Name="KelimeOgreticiEntities3" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tbl_Gun1" EntityType="Self.tbl_Gun1" />
+    <EntitySet Name="tbl_Gun180" EntityType="Self.tbl_Gun180" />
+    <EntitySet Name="tbl_Gun30" EntityType="Self.tbl_Gun30" />
+    <EntitySet Name="tbl_Gun7" EntityType="Self.tbl_Gun7" />
+    <EntitySet Name="tbl_GunListesi" EntityType="Self.tbl_GunListesi" />
+    <EntitySet Name="tbl_KelimeListesi" EntityType="Self.tbl_KelimeListesi" />
+  </EntityContainer>
+</Schema>
